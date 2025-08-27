@@ -1,0 +1,16 @@
+Algoritmo Como ir á aula
+
+variáveis livros, cadernos, roupas, escola, faculdade, transporte, café da manhã, aula //Ingredientes
+
+
+Início  //Como fazer
+
+	acordar("abrir os olhos")
+	se arrumar("vista as roupas e escovar os dentes")
+	conferir("os materiais, livros, cadernos, etc")
+	comer("café da manhã")
+	andar("vá até o tranporte, ou se dirja para a escola/faculdade")
+	chegar("chegue a tempo na sala de aula")
+	prestar("preste atenção na aula")
+	
+Fim
