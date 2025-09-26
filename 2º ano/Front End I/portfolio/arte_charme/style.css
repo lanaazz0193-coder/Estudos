@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(241, 241, 241);
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+img {
+    border-radius: 15px;
+    display: block;
+    margin: 0 auto;
+}

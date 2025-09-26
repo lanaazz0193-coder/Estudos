@@ -9,9 +9,12 @@ programa {
       
       escreva(contador, " ")
       contador = contador - 1  
+
+      se (contador % 4 == 0) {
+        escreva("[", contador, "]")
+      }
       
     }
-
     
     
     escreva("Acabou!")
