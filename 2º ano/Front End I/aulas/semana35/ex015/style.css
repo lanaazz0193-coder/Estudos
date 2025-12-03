@@ -1,0 +1,34 @@
+body {
+    background-color: #f1e5d7;
+}
+
+header {
+    background-color: #6F4E37;
+    color: #f1e5d7;
+    border-radius: 5px;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    font-size: 24px;
+    gap: 15px;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f1e5d7;
+}
+
+nav li :hover {
+    background-color: #E67E22;
+    border-radius: 5px;
+}
+
+footer{
+    background-color: #f1e5d7;
+    color: #6F4E37;
+}

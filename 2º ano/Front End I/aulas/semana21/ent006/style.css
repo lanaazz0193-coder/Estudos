@@ -1,21 +1,67 @@
 body {
-    background-color: ;
+    background-image: linear-gradient(360deg, #047F8C, #012340);
+    color: #e6e6e6;
+    margin: 0;
 }
 
-h1 {
-    font-size: ;
-    text-align: ;
-    color: ;
+header {
+    text-align: center;
+    padding: 40px 20px;
+    color: white;
+}
+
+header img {
+    border-radius: 10px;
+}
+
+header h1 {
+    color: white;
+    font-size: 35px;
 }
 
 h2 {
-    font-size: ;
-    text-align: ;
-    color: ;
+    text-align: center;
+    color: #042341;
+    margin-left: 20px;
 }
 
-p {
-    font-size: ;
-    text-align: ;
-    color: ;
+hr {
+    width: 80%;
+}
+
+ul, ol, dl {
+    font-size: 18px;
+}
+
+dt {
+    color: #042341;
+    font-weight: bold;
+}
+
+dd {
+    color: #cfcfcf;
+}
+
+button {
+    background: #007D8A;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    margin: 3px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0caaaf;
+}
+
+footer {
+    background: #01203A;
+    color: #ddd;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
 }
