@@ -1,0 +1,74 @@
+body {
+    background-image: linear-gradient(360deg, #047F8C, #012340);
+    color: #e6e6e6;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+    color: white;
+}
+
+header img {
+    border-radius: 10px;
+}
+
+header h1 {  
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: white;
+    font-size: 35px;
+}
+
+h2 {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;w
+    color: #042341;
+    margin-left: 20px;
+}
+
+hr {
+    width: 80%;
+}
+
+ul, ol, dl {
+    font-size: 18px;
+}
+
+dt {
+    color: #042341;
+    font-weight: bold;
+}
+
+dd {
+    color: #cfcfcf;
+}
+
+button {
+    background: #007D8A;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    margin: 3px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0caaaf;
+}
+
+footer {
+    background: #01203A;
+    color: #ddd;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}

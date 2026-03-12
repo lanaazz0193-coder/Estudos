@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form002</title>
+</head>
+<body>
+
+    <h1>Teste de Formulário</h1>
+
+    <form action="cadastro.html" method="get" autocomplete="on">
+
+        <div>
+            <label for="idnome">Nome:</label>
+            <input type="text" name="nome" id="idnome" placeholder="nome do usuário" autocomplete="username">
+        </div>
+
+        <div>
+            <label for="idsenha">Senha:</label>
+            <input type="password" name="senha" id="idsenha" minlength="8" placeholder="mínimo 8 letras" autocomplete="current-password">
+        </div>
+
+        <div>
+            <input type="submit" value="Enviar"> 
+            <input type="reset" value="Limpar">
+        </div>
+
+    </form>
+
+    <a href="ex012.html"><button>Voltar à lista</button></a>
+    
+</body>
+</html>

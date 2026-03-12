@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(131, 15, 15);
+}
+
+main {
+    background-color: rgba(80, 11, 11, 0.692);
+    
+}
+
+h1 {
+    color: rgba(88, 10, 10);
+    background-color: antiquewhite;
+}
+
+ul {
+    background-color: antiquewhite;
+    color: rgb(82, 7, 7);
+}
+
+p {
+    background-color: rgb(212, 47, 47);
+    color: antiquewhite;
+}
+
+
+div {
+    background-color: rgb(32, 32, 32);
+    color: rgb(255, 255, 255);
+}
