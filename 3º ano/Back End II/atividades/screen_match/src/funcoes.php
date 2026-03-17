@@ -17,3 +17,12 @@ function exibeMensagemLancamento(int $ano): void {
 function incluidoNoPlano(bool $planoPrime, int $ano): bool {
     return $planoPrime || $ano <= 2000;
 }
+
+function criaFilme(string $nome, int $anoDeLancamento, float $nota, string $genero) : array {
+    return [
+        'nome' => $nome,
+        'ano' => $anoDeLancamento,
+        'nota' => $nota,
+        'genero' => $genero
+    ];
+}

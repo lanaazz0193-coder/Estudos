@@ -1,15 +1,7 @@
 <?php
 
-$n = [
-    1,
-    2,
-    2,
-    3,
-    4,
-    4,
-    5,
-];
+$numero = [1, 2, 2, 3, 4, 4, 5,];
 
-array_unique($n);
+$removerDuplicados = array_values(array_unique($numero));
 
-var_dump($n);
+var_dump($removerDuplicados);

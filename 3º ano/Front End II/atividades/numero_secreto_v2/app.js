@@ -11,10 +11,18 @@ function exibirTexto (tag, texto) {
 
 }
 
-exibirTexto('h1', 'Jogo do Número Secreto');
-exibirTexto('p', 'Escolha um número de 1 a 10')
+let tentativas = 1;
 
-numeroSecreto = gerarNumeroSecreto();
+function textoInicial() {
+
+    exibirTexto('h1', 'Jogo do Número Secreto');
+    exibirTexto('p', 'Escolha um número de 1 a 10');
+
+}
+
+textoInicial();
+
+let numeroSecreto = gerarNumeroSecreto();
 
 function gerarNumeroSecreto() {
 
@@ -22,10 +30,62 @@ function gerarNumeroSecreto() {
 
 }
 
-
 function verificarChute() {
 
-    console.log (numeroSecreto);
+    let chute = document.querySelector('input').value;
+
+    if (tentativas > 10) {
+        exibirTexto('h1', 'Game Over');
+    }
+
+    if (chute == numeroSecreto){
+
+        exibirTexto('h1', 'Acertou!');
+
+        let palavraTentativa = tentativas == 1 ? 'tentativa.' : 'tentativas.';
+        let msgTentativa = `Parabéns, você acertou o Número Secreto (${numeroSecreto}), com ${tentativas} ${palavraTentativa}`
+
+        exibirTexto('p', msgTentativa);
+
+        document.getElementById('reiniciar').removeAttribute('disabled');
+        document.querySelector('input').setAttribute('disabled', true);
+
+
+    } else {
+
+        tentativas ++;
+
+        limparCampo()
+
+        if (chute > numeroSecreto) {
+
+            exibirTexto('p','O número secreto é menor, tente novamente.');
+
+        } else {
+
+            exibirTexto('p','O número secreto é maior, tente novamente.');
+
+        }
+    }
 
 }
 
+function limparCampo() {
+
+    chute = document.querySelector('input');
+    chute.value = '';
+
+}
+
+function novoJogo() {
+
+    textoInicial();
+    numeroSecreto = gerarNumeroSecreto();
+    document.querySelector('input').removeAttribute('disabled');
+    limparCampo();
+    document.getElementById('reiniciar').setAttribute('disabled', true);
+    document.getElementById('chute').removeAttribute('disabled');
+
+}
+
+console.log(numeroSecreto);
