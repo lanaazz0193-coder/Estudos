@@ -1,0 +1,70 @@
+header {
+  text-align: center;
+  font-size: 30px;
+  color: #cecece;
+}
+
+main, html {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #142601;
+}
+
+.container {
+  text-align: center;
+  color: #262626;
+}
+
+.button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 24px;
+  border: none;
+  background-color: #5E7332;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #274001;
+}
+
+.resultadoMesmaLinha {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+section{
+  display: block;
+  margin: 25px;
+}
+
+legend {
+  font-size: 18px;
+  color: #000000;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding-bottom: 5px;
+  background-color: #9c9c9c;
+  border-radius: 7px;
+}
+
+fieldset p {
+  margin: 8px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+legend {
+  font-size: 22px;
+  color: #ffffff;
+}
