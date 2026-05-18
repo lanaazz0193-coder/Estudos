@@ -149,6 +149,100 @@
 
             </fieldset>
         </section>
+
+        <section id="arrays-e-dom">
+            <fieldset>
+                <legend>Seção 4: Arrays e Manipulação do DOM</legend>
+                <div class="exercicio">
+                    <fieldset>
+                        <legend>24. Contador de Palavras</legend>
+                        <input type="text" id="palavra-ex24" placeholder="Digite uma palavra">
+                        <button onclick="adicionarEx24()" id="btn-add-ex24">Adicionar</button>
+                        <button onclick="reiniciarEx24()" id="btn-reiniciar-ex24">Reiniciar</button>
+                        <br><br>
+                        Palavras salvas: <span id="contador-ex24">0</span>
+                    </fieldset>
+                </div>
+                <div class="exercicio">
+                    <fieldset>
+                        <legend>25. Extrator de Primeiro Nome</legend>
+                        <input type="text" id="nome-completo-ex25" placeholder="Digite o nome completo">
+                        <button onclick="extrairEx25()" id="btn-extrair-ex25">Extrair</button>
+                        <br><br>
+                        Primeiro nome: <strong id="resultado-ex25"></strong>
+                    </fieldset>
+                </div>
+                <div class="exercicio">
+                    <fieldset>
+                        <legend>26. Calculadora de Despesas</legend>
+                        <input type="text" id="produto-ex26" placeholder="Nome do Produto">
+                        <input type="number" id="preco-ex26" placeholder="Preço (R$)">
+                        <button onclick="adicionarEx26()" id="btn-add-ex26">Adicionar</button>
+                        <button onclick="reiniciarEx26()" id="btn-reiniciar-ex26">Reiniciar</button>
+                        <h4>Lista de Produtos:</h4>
+                        <ul id="lista-produtos-ex26">
+                            <li id="itens-lista-26"></li>
+                        </ul>
+                        <h2 id="total-ex26">Total: R$ 0.00</h2>
+                    </fieldset>
+                </div>
+                <div class="exercicio">
+                    <fieldset>
+                        <legend>27. Gerador de Lista de Convidados</legend>
+                        <input type="text" id="nome-ex27" placeholder="Nome do convidado">
+                        <button onclick="adicionarEx27()" id="btn-add-ex27">Adicionar</button>
+                        <button onclick="reiniciarEx27()"  id="btn-reiniciar-ex27">Reiniciar</button>
+                        <br><br>
+                        <div id="resultado-texto-ex27">
+                            <h2>Lista</h2>
+                            <ul>
+                                <li id="itens-lista-27"></li>
+                            </ul>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="exercicio">
+                    <fieldset>
+                        <legend>28. Criador de Lista de Tarefas</legend>
+                        <input type="text" id="tarefa-ex28" placeholder="Digite uma tarefa">
+                        <button onclick="adicionarEx28()" id="btn-add-ex28">Adicionar</button>
+                        <button onclick="reiniciarEx28()" id="btn-reiniciar-ex28">Reiniciar</button>
+                        <h4>Minhas Tarefas:</h4>
+                        <ul id="lista-tarefas-ex28">
+                            <li id="itens-lista-28"></li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <div class="exercicio">
+                    <fieldset>
+                        <legend>29. Embaralhador de Itens</legend>
+                        <input type="text" id="item-ex29" placeholder="Digite um item">
+                        <button onclick="cadastrarEx29()" id="btn-cadastrar-ex29">Cadastrar</button>
+                        <button onclick="embaralharEx29()" id="btn-embaralhar-ex29">Embaralhar</button>
+                        <button onclick="reiniciarEx29()" id="btn-reiniciar-ex29">Reiniciar</button>
+                        <br><br>
+                        <strong>Array Atual:</strong>
+                        <div id="exibicao-array-ex29"></div>
+                    </fieldset>
+                </div>
+                <div class="exercicio">
+                    <fieldset>
+                        <legend>30. Sistema de Busca de Contatos</legend>
+                        <input type="text" id="cadastro-nome-ex30" placeholder="Cadastrar Nome">
+                        <button id="btn-cadastrar-ex30">Cadastrar</button>
+                        <br><br>
+                        <input type="text" id="busca-nome-ex30" placeholder="Buscar Nome">
+                        <button id="btn-buscar-ex30">Buscar</button>
+                        <br><br>
+                        <button id="btn-reiniciar-ex30">Reiniciar Sistema</button>
+                        <h4>Lista de Contatos:</h4>
+                        <ul id="lista-contatos-ex30"></ul>
+                        <span id="mensagem-ex30"></span>
+                    </fieldset>
+                </div>
+            </fieldset>
+        </section>
+
     </main>
 
     <script src="app.js"></script>

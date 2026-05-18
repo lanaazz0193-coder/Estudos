@@ -42,7 +42,7 @@ function ex05() {
     let n1 = parseInt(prompt("Valor 1: "));
     let n2 = parseInt(prompt("Valor 2: "));
 
-    
+
     let soma = ((n1) + (n2));
 
     alert(`A soma de ${n1} e ${n2} é igual a ${soma}.`);
@@ -53,7 +53,7 @@ function ex05() {
 function ex06() {
 
     console.log('Olá mundo.');
-    
+
 }
 
 //EXERCÍCIO 7
@@ -211,9 +211,9 @@ function ex17() {
 
 
     for (let i = 1; i <= 10; i++) {
-        
+
         lista.innerHTML = lista.innerHTML + `${numero} x ${i} = ${numero * i}` + "<br>";
-        
+
         //console.log(resultado);
         //me sinto uma idiota vendo o quão simples era isso aqui kk
     }
@@ -283,4 +283,101 @@ function ex23() {
     let nomes = ["Nome 1", "Nome2", "Nome3"];
     let primeiroNome = nomes[2];
     console.log(primeiroNome);
+}
+
+//EXERCÍCIO 24
+
+let exercicio24 = [];
+
+function adicionarEx24() {
+
+    //captura oq for escrito
+    let elementos = document.getElementById('palavra-ex24');
+
+    //adiciona ao array
+    exercicio24.push(elementos.value);
+    elementos.value = '';
+
+    //console.log(exercicio24);
+
+    console.log(exercicio24.length);
+
+    let resultado = document.getElementById('contador-ex24');
+    resultado.textContent = exercicio24.length;
+
+}
+
+function reiniciarEx24() {
+
+    exercicio24.length = 0;
+
+    resultado = document.getElementById('contador-ex24');
+    resultado.textContent = '0';
+
+}
+
+//EXERCÍCIO 25
+
+function extrairEx25() {
+
+    let nomeCompleto = document.getElementById('nome-completo-ex25').value;
+    let primeiroNome = nomeCompleto.split(' ')[0];
+        
+    let campoResultado = document.getElementById('resultado-ex25');
+    campoResultado.textContent = primeiroNome;
+
+}
+
+//EXERCÍCIO 26
+
+let valorTotal = 0;
+
+function adicionarEx26() {
+
+    let produto = document.getElementById('produto-ex26').value;
+    let valorProduto = parseFloat(document.getElementById('preco-ex26').value);
+
+    let listaProduto = document.getElementById('lista-produtos-ex26');
+    listaProduto.innerHTML = listaProduto.innerHTML + `<li id="itens-lista-26">${produto}</li>`;
+
+    valorTotal = valorTotal + valorProduto;
+
+    let textoTotal = document.getElementById('total-ex26');
+    textoTotal.textContent = `R$${valorTotal}`;
+
+}
+
+function reiniciarEx26() {
+
+    let textoTotal = document.getElementById('total-ex26');
+    textoTotal.textContent = ` `;
+
+    let listaProduto = document.getElementById('lista-produtos-ex26');
+    listaProduto.innerHTML = ` `;
+
+}
+
+//EXERCÍCIO 28
+
+let exercicio28 = [];
+
+function adicionarEx28(){
+
+    let texto = document.getElementById('tarefa-ex28').value;
+
+    exercicio28.push(texto);
+    texto.value = '';
+
+    console.log(exercicio28);
+
+    let lista = document.getElementById('lista-tarefas-ex28');
+    lista.innerHTML = lista.innerHTML + `<li id="itens-lista-28">${texto}</li>`;
+
+}
+
+function reiniciarEx28(){
+
+    let lista = document.getElementById('lista-tarefas-ex28');
+    lista.textContent = ` `;
+
 }

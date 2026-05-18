@@ -33,6 +33,7 @@ function sortear()
         }
     }
 }
+
 function embaralhar(lista) {
 
     let indice = lista.length;
