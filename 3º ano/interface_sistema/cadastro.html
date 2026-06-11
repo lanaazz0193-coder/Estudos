@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Cadastro</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <style>
+        h1 {
+            font-size: 45px;
+            color: white;
+            text-align: center;
+        }
+
+        body {
+            background-color: rgb(66, 66, 66);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header class="bg-black">
+
+        <!-- CABEÇALHO -->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-marrom sticky-top custom-nav">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Biblioteca</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="navbar bg-body-tertiary">
+                </nav>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./interface.html">Ínicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./administracao.html">Administração</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- /CABEÇALHO -->
+
+    </header>
+
+    <body>
+
+        <h1 class="m-5">Cadastro</h1>
+
+        <div class="container">
+            <div class="row bg-secondary rounded-1 p-3 m-3">
+                <div class="col-12">
+
+                    <form action="/envia" method="post">
+
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+                        <button type="submit">Enviar</button>
+                        
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+
+    </body>
+
+</body>
+
+</html>

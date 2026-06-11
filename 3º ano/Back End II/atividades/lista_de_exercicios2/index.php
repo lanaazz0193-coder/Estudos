@@ -998,3 +998,24 @@ function ex54()
 
 }
 
+//EXERCICIO 56 
+
+function ex56(){
+
+    $numero = readline("Digite um número: ");
+
+    while($numero != 1111){
+
+        $numero = readline("Digite outro número: ");
+
+    }
+
+    echo "Acabou!";
+
+}
+
+//EXERCÍCIO 57 
+
+function ex57(){
+
+}

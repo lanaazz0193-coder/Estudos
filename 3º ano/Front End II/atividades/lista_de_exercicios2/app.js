@@ -354,7 +354,6 @@ function reiniciarEx26() {
 
     let listaProduto = document.getElementById('lista-produtos-ex26');
     listaProduto.innerHTML = ` `;
-
 }
 
 //EXERCÍCIO 28
@@ -378,6 +377,8 @@ function adicionarEx28(){
 function reiniciarEx28(){
 
     let lista = document.getElementById('lista-tarefas-ex28');
-    lista.textContent = ` `;
+    lista.textContent = '';
+
+    exercicio28 = [];
 
 }
