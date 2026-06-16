@@ -1,0 +1,178 @@
+/* Importação de fontes modernas e sofisticadas do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --primary-color: #112233;      /* Azul escuro profundo (sofisticado e focado) */
+    --secondary-color: #1a365d;    /* Azul intermediário para elementos de interface */
+    --accent-color: #c5a059;       /* Dourado fosco para links ativos, hovers e botões */
+    --accent-hover: #b38f48;       /* Tom de dourado mais escuro para o hover */
+    --text-dark: #2d3748;          /* Grafite escuro para leitura confortável */
+    --text-light: #f7fafc;         /* Branco gelo para contrastes */
+    --bg-light: #f8fafc;           /* Fundo da página levemente acinzentado */
+    --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* --- Configurações Gerais --- */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+}
+
+/* Tipografia elegante com serifa para títulos de livros e seções */
+h1, h2, h3, h5, .navbar-brand, .card-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+/* --- Customização da BNavbar --- */
+.navbar {
+    background-color: var(--primary-color) !important;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    color: var(--accent-color) !important;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    transition: var(--transition-smooth);
+}
+
+.navbar-brand:hover {
+    color: var(--text-light) !important;
+}
+
+.navbar-nav .nav-link {
+    color: var(--text-light) !important;
+    font-weight: 400;
+    font-size: 0.95rem;
+    padding: 0.5rem 1rem !important;
+    border-radius: 4px;
+    transition: var(--transition-smooth);
+}
+
+/* Efeito ao passar o mouse e link ativo na Navbar */
+.navbar-nav .nav-link:hover, 
+.navbar-nav .nav-link.active {
+    color: var(--primary-color) !important;
+    background-color: var(--accent-color);
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1); /* Deixa o ícone do menu hambúrguer branco */
+}
+
+/* --- Customização do BBanner --- */
+.banner h1 {
+    font-size: 4rem;
+    color: var(--text-light);
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.6);
+}
+
+/* --- Customização dos BCards (Grid de Livros) --- */
+b-card {
+    display: block;
+    width: 100%;
+}
+
+/* Ajuste no container gerado pelo componente */
+.card {
+    border: none !important;
+    border-radius: 16px;
+    box-shadow: var(--card-shadow);
+    background-color: #ffffff;
+    transition: var(--transition-smooth);
+    margin: 1.5rem auto !important; /* Corrige o espaçamento forçado do JS original */
+    max-width: 100%;
+}
+
+/* Efeito de flutuação ao passar o mouse */
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.card img {
+    border-radius: 10px;
+    object-fit: cover;
+    height: 280px; /* Mantém um padrão visual para capas de tamanhos diferentes */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.08);
+    transition: var(--transition-smooth);
+}
+
+.card:hover img {
+    transform: scale(1.02);
+}
+
+.card-title {
+    color: var(--primary-color);
+    margin-top: 1rem;
+    font-size: 1.35rem;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #718096;
+}
+
+/* Botão de ação do Card */
+.card .btn {
+    background-color: var(--secondary-color) !important;
+    color: var(--text-light) !important;
+    border: 2px solid transparent !important;
+    border-radius: 8px;
+    padding: 10px 24px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: var(--transition-smooth);
+}
+
+.card .btn:hover {
+    background-color: transparent !important;
+    color: var(--secondary-color) !important;
+    border-color: var(--secondary-color) !important;
+}
+
+/* --- Carrossel e Bloco de Imagem Lateral --- */
+.carousel {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+}
+
+/* Efeito vidro fosco (Glassmorphism) na legenda do slide */
+.carousel-caption {
+    background: rgba(17, 34, 51, 0.75);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 12px;
+    padding: 24px;
+    bottom: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.carousel-caption h5 {
+    color: var(--accent-color);
+    font-size: 1.5rem;
+}
+
+/* Estilização da imagem estática à esquerda do carrossel */
+div.col-6[style*="background-image"] {
+    border-radius: 16px;
+    box-shadow: var(--card-shadow);
+}
+
+/* --- Rodapé (BFooter) --- */
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 3rem 0;
+    margin-top: 5rem;
+}

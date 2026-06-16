@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bolão - Sorteio</title>
+  <style>
+    :root {
+      --verde: #0b6623;
+      --verde-claro: #1faa59;
+      --amarelo: #ffdf00;
+      --azul: #002776;
+      --branco: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(180deg, var(--verde), #063d17);
+      color: var(--branco);
+    }
+
+    header {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 2.2rem;
+      font-weight: 900;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      background: linear-gradient(90deg, var(--amarelo), #ffe95c);
+      color: #000;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    }
+
+    header span {
+      display: block;
+      font-size: 1rem;
+      margin-top: 5px;
+      font-weight: 600;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 12px;
+      backdrop-filter: blur(6px);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+
+    h2 {
+      color: var(--amarelo);
+    }
+
+    input {
+      width: 70%;
+      padding: 10px;
+      border-radius: 6px;
+      border: none;
+      outline: none;
+    }
+
+    button {
+      padding: 10px 14px;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      background: var(--amarelo);
+      transition: 0.2s;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      background: #ffd000;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 10px;
+    }
+
+    li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px;
+      margin: 4px 0;
+      background: rgba(255,255,255,0.08);
+      border-radius: 6px;
+    }
+
+    .resultado {
+      margin-top: 20px;
+      padding: 20px;
+      background: var(--azul);
+      border-radius: 10px;
+      text-align: center;
+      font-size: 1.4rem;
+      animation: aparecer 0.5s ease;
+    }
+
+    @keyframes aparecer {
+      from { opacity: 0; transform: scale(0.8); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    .bola {
+      position: fixed;
+      bottom: 20px;
+      right: -80px;
+      font-size: 40px;
+      animation: chute 6s linear infinite;
+    }
+
+    @keyframes chute {
+      0% { right: -80px; transform: rotate(0deg); }
+      50% { right: 50%; transform: rotate(360deg); }
+      100% { right: 110%; transform: rotate(720deg); }
+    }
+
+  </style>
+</head>
+<body>
+
+<header>
+  ⚽ BOLÃO DO JOGO
+  <span>Sorteio entre 3 acertadores</span>
+</header>
+
+<main>
+  <h2>Adicionar Participantes</h2>
+  <input type="text" id="nome" placeholder="Nome do participante">
+  <button onclick="adicionarParticipante()">Adicionar</button>
+
+  <h2>Lista</h2>
+  <ul id="lista"></ul>
+
+  <button onclick="sortear()">Sortear ⚽</button>
+
+  <div class="resultado" id="resultado" style="display:none;"></div>
+</main>
+
+<div class="bola">⚽</div>
+
+<script>
+  const participantes = [];
+
+  function adicionarParticipante() {
+    const input = document.getElementById('nome');
+    const nome = input.value.trim();
+
+    if (!nome) return;
+
+    if (participantes.length >= 3) {
+      alert('Limite de 3 participantes atingido');
+      return;
+    }
+
+    participantes.push(nome);
+    input.value = '';
+    atualizarLista();
+  }
+
+  function atualizarLista() {
+    const lista = document.getElementById('lista');
+    lista.innerHTML = '';
+
+    participantes.forEach((p, index) => {
+      const li = document.createElement('li');
+
+      const span = document.createElement('span');
+      span.textContent = p;
+
+      const btn = document.createElement('button');
+      btn.textContent = '❌';
+      btn.onclick = () => removerParticipante(index);
+
+      li.appendChild(span);
+      li.appendChild(btn);
+      lista.appendChild(li);
+    });
+  }
+
+  function removerParticipante(index) {
+    participantes.splice(index, 1);
+    atualizarLista();
+  }
+
+  function sortear() {
+    if (participantes.length !== 3) {
+      alert('É necessário exatamente 3 participantes');
+      return;
+    }
+
+    const indice = Math.floor(Math.random() * participantes.length);
+    const vencedor = participantes[indice];
+
+    const resultado = document.getElementById('resultado');
+    resultado.style.display = 'block';
+    resultado.innerHTML = `🏆 Vencedor: <strong>${vencedor}</strong>`;
+  }
+  embaralhar(participantes);
+
+    let sorteio = document.getElementById('lista-sorteio');
+
+    for(let i = 0; i < amigos.length; i++)
+    {
+        if(i == (amigos.length - 1))
+        {
+            sorteio.innerHTML = sorteio.innerHTML + amigos[i] + '>>' + amigos[0] + "<br>";
+        }
+        else
+        {
+            sorteio.innerHTML = sorteio.innerHTML + amigos[i] + '>>' + amigos[i + 1] + "<br>";
+        }
+    }
+</script>
+
+</body>
+</html>
