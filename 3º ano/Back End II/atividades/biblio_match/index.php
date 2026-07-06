@@ -15,5 +15,3 @@ $calculadora -> incluirNoCalculo($meuLivro);
 $calculadora -> incluirNoCalculo($minhaRevista);
 
 echo "Total de dias até a devolução do livro/revista: ". $calculadora->getTotal();
-
-//tem q o calculo com dias exatos? 

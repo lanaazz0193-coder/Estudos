@@ -14,6 +14,16 @@
 
     <script type="module" src="./assets/js/Lib.js"></script>
 
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- fontes -->
+
+    <!-- f-playfair -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alien+Block&family=Ballet:opsz@16..72&family=Fira+Code:wght@300..700&family=Monsieur+La+Doulaise&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Prata&family=Rouge+Script&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -22,11 +32,15 @@
         <b-navbar></b-navbar>
     </header>
 
-    <main>
+    <main class="c-azul f-cinza-claro"> 
 
-        <div class="container">
+
+        <!-- Primeira parte-->
+        <div class="">
             <div class="row">
-                <div class="col">
+
+                <!-- Primeira parte -->
+                <div class="col-6 p-5 mt-5">
 
                     <form>
                         <div class="mb-3">
@@ -46,19 +60,31 @@
                             <label for="email" class="form-label">E‐mail</label>
                             <input class="form-control" type="email" id="email" name="email" required>
                         </div>
-
                         <div class="mb-3">
                             <label for="tel">Telefone</label>
-                            <input class="form-control" type="tel" id="tel" name="telefone" placeholder="(99) 99999-9999">
+                            <input class="form-control" type="tel" id="tel" name="telefone"
+                                placeholder="(99) 99999-9999">
                         </div>
-
                     </form>
-                    
-                    <button type="submit" class="btn btn-secondary">Cadastrar</button>
-                        
+
+
+
                 </div>
+
+                <!-- Segunda parte IMAGEM -->
+                <div class="col-6"
+                    style="background-image: url('./assets/img/biblioteca.jpg'); background-size: cover; background-position: center; min-height: 100vh;">
+                </div>
+
             </div>
         </div>
+
+        </div>
+        </div>
+
+
+
+
 
     </main>
 

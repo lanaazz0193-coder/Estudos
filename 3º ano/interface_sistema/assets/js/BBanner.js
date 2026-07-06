@@ -15,7 +15,7 @@ export class BBanner extends HTMLElement {
             style="background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.65)), url('${imagem}');background-size: cover; background-position: center;">
 
             <div>
-                <h1>${titulo}</h1>
+                <h1 class="f-g f-branco f-playfair">${titulo}</h1>
             </div>
 
         </section>`
