@@ -1,0 +1,99 @@
+/* paleta de cores fundo */
+
+.c-preto {
+    background-color: #111111;
+}
+
+.c-azul-escuro {
+    background-color: #112233;
+}
+
+.c-azul {
+    background-color: #213447;
+}
+
+.c-cinza-escuro {
+    background-color: #52423D;
+}
+
+.c-cinza-medio {
+    background-color: #887D77;
+}
+
+.c-cinza-claro {
+    background-color: #C0BAB3;
+}
+
+/* fontes */
+
+.f-playfair {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* paleta de cores fontes */
+
+.f-preto {
+    color: #160F0C;
+}
+
+.f-azul-escuro {
+    color: #112233;
+}
+
+.f-cinza-escuro {
+    color: #52423D;
+}
+
+.f-cinza-medio {
+    color: #887D77;
+}
+
+.f-cinza-claro {
+    color: #C0BAB3;
+}
+
+.f-branco {
+    color: rgb(255, 246, 235);
+}
+
+/* tamanho fontes */
+
+.f-espacado {
+    letter-spacing: 5px;
+}
+
+
+.f-pp {
+    font-size: 13px;
+}
+
+.f-p {
+    font-size: 18px;
+}
+
+.f-m {
+    font-size: 24px;
+}
+
+.f-g {
+    font-size: 60px;
+}
+
+.f-gg {
+    font-size: 92px;
+}
+
+.f-ggg {
+    font-size: 120px;
+}
+
+
+
+/* altura das sessoes */
+
+.tela-cheia {
+    height: 950px;
+}
